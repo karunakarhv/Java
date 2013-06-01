@@ -1,0 +1,135 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+Must Do:
+
+a) Read the attached documents
+b) Read this link to understand more on how constructors work
+http://download.oracle.com/javase/tutorial/java/javaOO/constructors.html
+c) Read about arrays here:http://download.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
+d) To know more about strings you can read 
+http://download.oracle.com/javase/tutorial/java/data/strings.html (cover as much as possible, rest I will do so in the class).
+
+
+Exercises:
+
+Basic:
+
+a) Create an array of ints with size 10. Insert 0-9 integer numbers into it (using a for loop). Print out its value to the console using the length variable (in another for loop).
+
+b) Write a pgm to print out the inputs given by the user in the command line to the console (user the String array given as input to the main method). If there is no input given, ask the user to do so.
+
+c) Try Integer.parseInt(String n) to convert an input string (which contains a number) into a int value.
+
+d) Create a program to take 2 inputs (say x, y) from the user which should be used to print multiplication tables from x * 1 till x * y.
+
+e) Concatenate all the user input strings (input from command line) and display on the console.
+
+f) Take a number of int inputs from the user (command line), sum it all up and print the value to the console
+
+g) There are Ducks. A Duck has a name and age. A Duck can swim. When a Duck swims, it shouts out its name. Create a Duck class and test it by creating a few objects, associating different names and asking them to swim.
+
+h) Take a input int from the user and test whether the number is even or not.
+
+i) Create an add() method in a Math class. Pass 2 int parameters to it, add it and return the value. Test the working of this method in a tester class with main(). Modify the parameter values and verify if this affects the value in the main() method. Also understand how a return value can be accessed in the tester class.
+
+j) Create an add() overloaded method in the Math class and take 2 strings as arguments. Concat the 2 strings and return it. Now manipulate the string variables inside the method (make it point to null, make it point to a new object) and verify whether it affects the passed string variables. Also understand how a return value can be accessed in the tester class.
+
+k) There are Hippos. A Hippo has a name and size (range 1-10). A Hippo can dance and sing. When it sings, it shouts out its name. When it dances, if its size < 5, it does the break dance else it will do the kuchipudi. Write a tester class to test the design of Hippo. How do you ensure that the state of Hippo will not be erroneously set? Delclare the state variables to be private, add setter/getter for name, size and then test accordingly.
+
+l) Add the ability of Hippo to eat. If you ask a Hippo to eat, it will eat grass. However you should be able to ask the Hippo to eat a Vegetable as well that you pass to it (parameter to the overloaded eat method). A Vegetable has a name and type (leaf/fruit/root,etc). A Vegetable has no behavior. Create a class for this. Pass a reference of this to the eat() method in Hippo. Invoke this from the tester class. Understand how if you manipulate the state of the passed Vegetable in the eat() method using the passed parameter, it actually affects even after the control has returned back.
+
+m) Add the ability to create a Hippo by only name and both name and size during construction (create 2 overloaded constructors).
+
+n) A hen can run, lay egg and peck. Each hen has muscles. More muscles (> 10) means more power to peck & run. However such hen will lay lesser eggs. Write a simple app to simulate this. Understand abstraction and encapsulation as applied to this example.
+
+k) Look up the javadoc of String (there in your cd. you can oind it in link http://download.oracle.com/javase/1.4.2/docs/api/java/lang/String.html as well) and create a test pgm to try out the methods charAt(), equals(), contains(), indexOf(), length(), toUpperCase(), toLowerCase(), compareTo(), substr(). Javadoc contains the documentation of the class and will inform us on what methods we can invoke. The program should print what is the length of the input string, replace a part of the string with another, identify which chars are in what position, search for the existence of another string.
+
+p) Create a pgm to test whether a given string is palindrome or not. How will you know what methods to use for Strings?
+
+
+Intermediate:
+
+a) Write a pgm to achive the following:
+
+java xyz abracadabra 
+o/p = abracadabra
+
+java xyz abracadabra 4 
+o/p = abra
+
+java xyz abracadabra 4 8
+o/p = acad
+
+java xyz abracadabra 4 8 2
+o/p = acad acad
+
+
+b) There are Pens. You can use a pen to write. Each pen has some quantity of ink which dictates how much you can write with a pen (meaning the pen runs out of ink after a while). Marker, ball point, ink are types of Pens. Write a tester class to construct objects of the various types of pens and use them to write.
+
+c) Write a pgm to achive the following (you can invoke charAt(int n) method on a String object to obtain the character at that position in the String):
+
+java xyz Hasta la vista baby
+
+o/p:
+
+number of letters = 16
+number of unique letters = 9
+number of vowels = 2
+number of consonants = 7
+
+Use Character class methods isDigit(), isLetter(), isLowerCase(), isUpperCase()http://download.oracle.com/javase/1,5,0/docs/api/java/lang/Character.html
+
+d) There are person(s). A person has many names and an age. A person can sing and dance. When he is asked to using, he sings using all the names he has. He can dance very fast if he is < 50 years old else he dances slowly. Write a tester class to test the functionality of the Person class.
+
+e) Take in any number of integer inputs from the user. Insert all the n-1 inputs into a integer array. Search whether the nth element is there in the array and print out true with location or false.
+
+Ex: java TestArray 1 2 3 4 5 3
+-> Insert 1,2,3,4,5 values into an int array (after using Integer.parseInt(args[i]) to convert String to int).
+-> Search whether value 3 is there in the array. 
+
+O/p: Value 3 found at position 3.
+
+f) Do the same above for input strings (search for the nth input and print out location)
+
+c) Create a Math class with following methods:
+i) Ability to add 2 ints
+ii) Ability to add n ints (take an array of ints as parameter)
+iii) Ability to add n doubles
+iv) Ability to add 2 complex numbers. Create a Complex class with 2 int instance variables a and b. a represents the real part and b the imaginary.
+
+g) Create a Matrix class which takes in m,n (rows,coloumns) as parameter to its consructor (assume only a 2 dimensional matrix is going to be created using this). Provide the ability to add values to all the rows/columns by a addElement(int rowNum, int colNum, int value) method. Provide a print() method which should print out the matrix values row/column wise.
+
+Create a MatrixOperation class with following methods:
+i) Ability to add 2 matrices.
+ii) Find the transpose of a matrix
+iii) Multiply 2 matrices
+
+h) Test whether an int input from user has an int square root or not (Use Math class -http://download.oracle.com/javase/6/docs/api/java/lang/Math.html).
+
+Assume all these methods take Matrix ref variables as parameters.
+
+Difficult:
+
+a)  Identify whether a Matrix is a Magic Square (sum of each row, column, diagnals should be the same)
+
+b) Given a nxn (odd), generate a magic square for it
+
+Basic:
+
+Questions to which you should know the answer to:
+
+1) How are parameters passed in Java? 
+2) What type of parameters can be passed or returned from a method? Object, ref, primitive?
+2) What is the requirement of having a constructor in a class?
+3) What are setters/getters?
+4) How is datahiding used in a class? Explain the reason to hide the state?
+5) How does state impact behavior and vice-versa? Explain with example.
+6) When you provide a parameterized constructor, is it necessary to associate a setter method to that state variable?
+7) Briefly identify the design rules that need to be followed by the designer of a class to ensure his objects work as per expectation, irrespective of how its being used.
+8) What is Constructor overloading?
+9) What is method overloading?
+10) What is the advantage of Constructor/method overloading?
+11) What is a command line argument? How is it passed to a java program?
+12) Explain how to create an array (of primitive and of reference). How can you find out its max length? What are the default values stored inside an array when it is created?

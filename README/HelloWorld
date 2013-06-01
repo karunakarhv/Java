@@ -1,0 +1,13 @@
+1. Main method must be of public, if it is not no exception but JVM will tell
+that "Main method not public"
+
+2. main must have a signature of return type void and parameters as String array, if it is not then "Exception in thread "main" java.lang.NoSuchMethodError: main" 
+
+3. Java is case sensitive.
+
+4. If we dont declare Class as public, by default it accepts as public.
+
+5. Method if we declare return type, we should return else compiler(javac) will throw an error- missing return statement.
+
+6. Parameters to main method i.e String [] args can be String [] a/b/any name.
+It need not be named only args. 

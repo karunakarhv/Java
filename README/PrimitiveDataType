@@ -1,0 +1,21 @@
+Primitive Data Types:
+
+1. int i = 0.0;
+   SOP(i)
+   Error in javac: 
+   1.possible loss of precision
+   2. found: double, required: int
+
+2. int i = 0L or 0l;
+   SOP(i)
+   Error in javac: 
+   1.possible loss of precision
+   2. found: long, required: int
+  
+3. byte i = 128; // Range issue, if it is less than 128 it prints
+   SOP(i) 
+   Error in javac:
+   1. possible loss of precision
+   2. found: int required:byte 
+
+4. int i = 4000000000; //Integer number too large 

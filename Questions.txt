@@ -1,0 +1,67 @@
+                                                                
+ Preliminary:
+
+1) WAP to create an array with 10 size and of int holding ability. Store values 1-10 in it. Using the length variable, access each element of the array and print it to the console. Create the array in 2 ways - one using the new operator and then storing the values individually, two by creating the array with the values directly in the array. 
+Loop over the array using an index variable and the enhanced for as well.
+
+2) WAP to create a 2 dimensional int array with 3 as first dimension size. Create unidimensional arrays with size 2 and store numbers in the 2-D array. Now loop over the arrays and display the value accordingly.
+
+3) Take integer inputs from the user via the command line (as strings). Depending on how many elements have been passed, create an int array with the size and using Integer.parseInt() convert the string inputs and store them in the array and print out the values to the console.
+
+4) WAP to create an array of strings with 5 colors as values. Use Math.random() to randomly print out the values from the array.
+
+Problems:
+
+1) WAM to add an arrays of ints and return the sum value. Test for boundary cases.
+
+2) WAM to accept an array of ints as parameter. The method should return the max value from it. Add another method which returns the min from the elements.
+
+3) WAM to pass 2 arrays of ints to a method. The method should return the max value present across both the array elements.
+
+4) WAM to pass 2 arrays of ints to a method. The method should return the average of the values across the 2 arrays. The avg returned should be exact and not an approximation.
+
+5) WAM to accept an int input. The method should return whether the num passed is a square (like i/p-> 100, 9, 16, etc -> o/p should be true) or not.
+
+6) WAM to accept an int input. Find the sum of the digits in the number and return it.
+
+7) WAM to accept an int ex:cba as input. If it contains 3 digits, the returned value should be a+ b*b + c*c*c where a is the units, b is the tens and c is the third digit. Be careful of overflow here.
+
+8) WAM to accept an int as input. Test whether the number is divisible by 
+
+9) WAM to accept an int as input and return whether the number is a palindrome or not.
+
+10) WAM to accept 2 int arrays as parameters. The method should return one array with only unique elements across both the arrays.
+
+11) WAM to accept an int array. Return an array which contains only unique elements.
+
+12) WAM to accept an int array. Return an array which contains only repeating elements. Also identify how many times the numbers are repeating.
+
+13) WAM to accept an int array and an int and do a search of the second parameter in the first and return true/false. How many different ways can we do a search?
+
+14) WAM to accept an int array and return a sorted array. How many different ways do you know to sort?
+
+15) WAM to accept a string and return a boolean to indicate whether the string passed is a boolean or not.
+
+16) WAM to accept a string. Identify how many times each character is repeating in it.
+
+17) WAM to accept a string as parameter. Convert the string characters to lowercase if its uppercase and to uppercase if its lowercase. If there are digits or special chars in the string, they should be omitted.
+
+18) WAM to accept a string as parameter. Find out how many digits, consonants, vowels are there in it and print it out.
+
+19) WAM to accept a string as input. The method should return a string which does not contain any repeating characters.
+
+20) WAM to accept 2 strings as input. Find out how many times does the second param occur in the first one (number of occurances) and return the count.
+
+21) WAM to accept an array of strings as parameter. Remove duplicates from it and return an array containing only unique strings.
+
+22) WAM to accept an array of strings and an int as parameters. Remove all strings which has length equal to or greater than the int that is passed from the array and return the array.
+
+23) WAM to accept a string as parameter. Reverse the string and return it. All the words in the strings should be individually reversed and then returned.
+
+24) WAM to accept a string as input. Return a new string which contains the passed strings words in a sorted manner.
+
+25) Create a MyString class. This should mimic the functioning of the String class. Using this class, a user should be able to create an object for ex: MyString m = new MyString(char array as param);. The class should expose the following methods:
+a) replace a part of the string with another
+b) search for the occurance of a string
+c) find the length of the string
+d) find out if 2 MyString objs are equal
